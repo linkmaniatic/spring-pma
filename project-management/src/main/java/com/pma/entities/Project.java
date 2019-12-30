@@ -1,10 +1,12 @@
 //Create a mapping between the java and the SQL table of the object.
 package com.pma.entities;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity  //Marks that this object is a POJO that it has to be saved on the db table.
 public class Project {
 
 	@Id
